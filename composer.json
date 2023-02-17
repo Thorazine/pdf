@@ -1,0 +1,19 @@
+{
+    "name": "thorazine/pdf",
+    "description": "Create pdfs by creating reusable templates with possibly different base styles",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Thorazine\\Pdf\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.0|^8.1",
+        "setasign/fpdf": "1.8.*",
+        "setasign/fpdi": "^2.0",
+        "ext-gd": "*",
+        "ext-zlib": "*"
+    }
+}
