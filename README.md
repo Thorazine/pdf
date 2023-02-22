@@ -1,4 +1,4 @@
-# Create pdfs by creating reusable templates
+# Create pdfs with reusable templates
 
 ## What does this package do
 Create pdfs by creating reusable templates. Optionally you can define different base styles to share between your pdf's. Think in term of logo's, colors, spacing, etc. 

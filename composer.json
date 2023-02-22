@@ -1,6 +1,6 @@
 {
     "name": "thorazine/pdf",
-    "description": "Create pdfs by creating reusable templates with possibly different base styles",
+    "description": "Create pdfs with reusable templates",
     "type": "library",
     "license": "MIT",
     "autoload": {
