@@ -1,9 +1,8 @@
 # Create pdfs with reusable templates
 
-## What does this package do
 Create pdfs by creating reusable templates. Optionally you can define different base styles to share between your pdf's. Think in term of logo's, colors, spacing, etc. 
 
-A pdf can be built using clear syntax with variable and extendable options for every item you create. This package is built for Laravel but can also be used with vanilla PHP or any other framework. This too is interchangable. 
+A pdf can be built using clear syntax with variable and extendable options for every item you create. This package is built for Laravel but can also be used with vanilla PHP or any other framework. Like everything else, this too is interchangable. 
 
 
 ## How to create a document
