@@ -15,7 +15,16 @@ class ExamplePdf
         // start a document and load the settings that are default for all
         // These settings overwrite the default settings. 
         // therefor settings are optional as there is a default
-        $document = new Document(new SomeSettings());
+        $document = new Document;
+
+        // these are the default types you can play with
+        // Each of them accept default settings but
+        // its optional as they all have a default
+        $document->documentSettings(new SomeSettings);
+        $document->sectionSettings(new SomeSettings);
+        $document->tableSettings(new SomeSettings);
+        $document->rowSettings(new SomeSettings);
+        $document->cellSettings(new SomeSettings);
 
         // We do not add pages. Pages are added automatically. Instead we add sections and create pages as we go and as fits
         $document->addSection(function($section) {
