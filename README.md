@@ -22,8 +22,8 @@ class ExamplePdf
             // section passes back to document but has the document in it
 
             // add a titleor a paragraph
-            $section->add($this->title());
-            $section->add($this->paragraph('Some text'));
+            $section->add($this->title($section, 'The title'));
+            $section->add($this->paragraph($section, 'Some text'));
 
             // tables are more complex. Once in a table you can add rows and cells
             $section->addTable(function($table) {
@@ -38,12 +38,12 @@ class ExamplePdf
                     $row->addCell(function($cell) {
 
                         // lets drop a paragraph in the cell
-                        $cell->add($this->paragraph('Cell 1'));
+                        $cell->add($this->paragraph($cell, 'Some paragraph'));
                     })->width(60);
                     $row->addCell(function($cell) {
 
                         // lets drop a title in the cell
-                        $cell->add($this->title('Some title'));
+                        $cell->add($this->title($cell, 'Some title'));
                     })->width(40);
 
                     // so this row has two cells. By default we will be 
@@ -61,17 +61,17 @@ class ExamplePdf
     }
     
     // these can all be moved to traits if needed
-    private function title() : Title
+    private function title($instance, $text) : Title
     {
         return (new Title($section))
-            ->text('Title')
+            ->text($text)
             ->font('Calibri')
             ->margin(2, 4) // like css; top and bottom have 2, left right have 4
             ->padding(2); // Like css: All sides 2 points padding
             // etc;
     }
 
-    private function paragraph($text) : Paragraph
+    private function paragraph($instance, $text) : Paragraph
     {
         return (new Paragraph($section))
             ->text($text);
