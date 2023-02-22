@@ -8,7 +8,7 @@
             "Thorazine\\Pdf\\": "src/"
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "php": "^8.0|^8.1",
         "setasign/fpdf": "1.8.*",

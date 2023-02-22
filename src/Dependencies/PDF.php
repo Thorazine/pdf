@@ -37,6 +37,7 @@ class PDF extends FPDF
     public $TagHref;   // URL for a cell
     public $allowEmpty = true;
     public $defaultTag = 'p';
+    public $LastLine;
 
     protected $noParagraph = false;
 
