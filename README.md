@@ -84,3 +84,7 @@ class ExamplePdf
     }
 }
 ```
+
+## What defines this package
+
+The industry standard now a days leans towards html conversion. As this is maintainable and easily built, we found that the conversion was slow and did not support css3 (flex box in particular). We also would've liked more control over the page breaking and wanted to keep a small footprint as we save all our pdf's to disk for administration purposes (somewhat specific to our business). But the real issue was speed. Every month we build thousends of pdf's in the background. We found that using a library like FPDF still gives the fastest and leanest pdf's. The problem however is the interface. It takes a lot of calculations to create a proper maintainable pdf with this lib. So this is our attempt to make it more standardized, extendable, repeatable and most of all, simple.
