@@ -10,8 +10,7 @@
     },
     "authors": [
         {
-            "name": "Anwar el Bouhdifi",
-            "email": "anwar.el.bouhdifi@nh1816.nl"
+            "name": "Matthijs Openneer"
         }
     ],
     "minimum-stability": "dev",
