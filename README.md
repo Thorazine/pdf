@@ -8,14 +8,14 @@ A pdf can be built using clear syntax with variable and extendable options for e
 ## How to create a document
 
 ```php
-class ExamplePdf
+class ExamplePdf 
 {
-    private function build() : Document
+    private function build(PdfBuilder $builder) : Document
     {
         // start a document and load the settings that are default for all
         // These settings overwrite the default settings. 
         // therefor settings are optional as there is a default
-        $document = new Document;
+        $document = $builder->document();
         $document->settings(new SomeSettings);
 
         // We do not add pages. Pages are added automatically. Instead we add sections and create pages as we go and as fits

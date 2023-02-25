@@ -23,11 +23,10 @@ class PdfServiceProvider extends ServiceProvider
             // config
             __DIR__.'/config/pdf.php' => config_path('pdf.php'),
 
-            // translations
-            __DIR__.'/resources/lang/nl/right.php' => resource_path('lang/nl/right.php'),
+        ], 'pdf');
 
-        ], 'right');
-
+        dd(config('pdf'));
+        
         if (app()->environment(['local', 'dev', 'development', 'test', 'testing', 'acc', 'acceptance'])) {
             $this->loadRoutesFrom(__DIR__.'/routes/pdf.php');
         }
